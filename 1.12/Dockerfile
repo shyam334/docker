@@ -1,6 +1,6 @@
-FROM alpine:3.4
+FROM centos:7.3.1611
 
-RUN apk add --no-cache \
+RUN yum install -y \
 		ca-certificates \
 		curl \
 		openssl

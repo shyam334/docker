@@ -1,7 +1,7 @@
 FROM docker:1.13
 
 # https://github.com/docker/docker/blob/master/project/PACKAGERS.md#runtime-dependencies
-RUN apk add --no-cache \
+RUN yum install -y \
 		btrfs-progs \
 		e2fsprogs \
 		e2fsprogs-extra \
